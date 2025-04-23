@@ -54,7 +54,7 @@ func (tm *TaskManager) CreateTask() *Task {
 // имитация долгой задачи
 func (tm *TaskManager) processTask(taskID string) {
 	// время имитации в минутах
-	time.Sleep(1 * time.Minute)
+	time.Sleep(3 * time.Minute) // минуты 
 
 	tm.mu.Lock()
 	defer tm.mu.Unlock()
